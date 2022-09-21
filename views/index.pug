@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+
+<body id="image">
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com/">Google</a></li>
+            <li><a href="https://www.codechef.com/practice?end_rating=999&group=unattempted&hints=0&itm_campaign=problems_head&itm_medium=navmenu&limit=20&page=0&search=&sort_by=difficulty_rating&sort_order=asc&start_rating=0&tags=&topic=&video_editorial=0&wa_enabled=0">Codechef</a></li>
+            <li><a href="https://www.geeksforgeeks.org/">Geeksforgeeks</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1><div id="Heading">#{message}</div></h1>
+        <form action="/" method="POST" id="contact" onsubmit="Submit.disabled=true; return true;">
+            <input type="text" name="name" id="name" placeholder="Enter Name"></input>
+            <input type="text" name ="age" id="age" placeholder="Enter Age"></input>
+            <input type="get" name ="gender" id="gender" placeholder="Gender"></input>
+            <textarea name="address" id="address" cols="10" rows="5" placeholder="ADDRESS"></textarea>
+            <textarea name="Reviews" id="Reviews" cols="10" rows="5" placeholder="Reviews: Write Something About you............."></textarea>
+            <select name="Gender" id="role">
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Trans">Trans</option>
+            </select>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
